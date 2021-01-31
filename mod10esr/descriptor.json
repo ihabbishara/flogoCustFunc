@@ -1,0 +1,36 @@
+{
+    "name": "flogoCustomFuncs",
+    "type": "flogo:function",
+    "version": "0.1.0",
+    "title": "Localsearch Custom functions used for Localsearch",
+    "description": "Localsearch Custom functions used for Localsearch",
+    "functions": [
+        {
+            "name": "mod10esr",
+            "description": "Returns a the final Invoice number after applying Mod10 ESR (ISR) Algorithm",
+            "example": "mod10esr(BILLING_ESR_MOD10=0946827135, BILLING_ESR_PREFIX=988138, customerNr=0000096950, invoiceNumber=0400000001), Returns: 988138000009695004000000014",
+
+            "args": [
+                {
+                    "name": "BILLING_ESR_MOD10",
+                    "type": "string"
+                },
+                {
+                    "name": "BILLING_ESR_PREFIX",
+                    "type": "string"
+                },
+                {
+                    "name": "customerNr",
+                    "type": "string"
+                },
+                {
+                    "name": "invoiceNumber",
+                    "type": "string"
+                }
+            ],
+            "return": {
+                "type": "string"
+            }
+        }
+    ]
+}
